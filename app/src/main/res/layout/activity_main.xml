@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_content_group"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/all_bg_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/main_tab_fragment01_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/main_tab_fragment01_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:focusable="false"
+                android:padding="3dp"/>
+            <TextView
+                android:id="@+id/main_tab_fragment01_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_tab_fragment02_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/main_tab_fragment02_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:focusable="false"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/main_tab_fragment02_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收藏夹"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_tab_fragment03_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/main_tab_fragment03_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:focusable="false"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/main_tab_fragment03_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进货车"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:visibility="visible"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/main_tab_fragment04_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/main_tab_fragment04_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:focusable="false"
+                android:padding="3dp"/>
+            <TextView
+                android:id="@+id/main_tab_fragment04_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.example.a1.baobao.view.NoScrollViewPager
+        android:id="@+id/main_content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_tab_bar"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:scrollbars="none"/>
+</RelativeLayout>

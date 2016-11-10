@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bb_gray_dark">#424C55</color>
+    <color name="themes_color">#D60545</color>
+    <color name="all_bg_color">#f6f6f6</color>
+</resources>
